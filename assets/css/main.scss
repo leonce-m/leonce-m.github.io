@@ -141,3 +141,40 @@
   height: 100%;
   border: 0;
 }
+
+.cv-viewer {
+  width: 100%;
+  min-height: calc(100dvh - 4rem);
+  margin: 0;
+  padding: 0;
+  background: #e5e7eb;
+  overflow: hidden;
+}
+
+.cv-viewer__pages {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(0.75rem, 2vw, 1.5rem);
+  align-items: start;
+  justify-content: center;
+  width: 100%;
+  min-height: calc(100dvh - 4rem);
+  padding: clamp(0.75rem, 2vw, 1.5rem);
+}
+
+.cv-viewer__page {
+  display: block;
+  width: min(100%, 52rem);
+  height: auto;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.18);
+}
+
+.cv-viewer__pdf-link {
+  margin: 0;
+  padding: 0 1rem 1.5rem;
+  text-align: center;
+  font-weight: 700;
+  background: #e5e7eb;
+}
