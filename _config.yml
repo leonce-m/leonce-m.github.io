@@ -1,3 +1,31 @@
-title: Leonce Mollerus
-description: Robotics, SLAM, autonomous racing, and embedded systems
-theme: minima
+title: "Leonce Mollerus"
+name: "Leonce Mollerus"
+description: "Robotics, SLAM, autonomous racing, and embedded systems"
+
+url: "https://lmollerus.github.io"
+baseurl: ""
+
+remote_theme: "mmistakes/minimal-mistakes@4.28.0"
+
+plugins:
+  - jekyll-include-cache
+
+minimal_mistakes_skin: "default"
+
+locale: "en"
+search: false
+
+author:
+  name: "Leonce Mollerus"
+  bio: "Robotics and autonomous systems student working on graph-based SLAM, ROS 2, and Formula Student autonomous racing."
+  location: "Germany"
+
+include:
+  - _pages
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: single
+      author_profile: false

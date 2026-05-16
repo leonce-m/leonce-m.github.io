@@ -1,0 +1,34 @@
+{% assign projects = site.data.projects %}
+{% assign selected_ids = include.ids | default: "" | split: "," %}
+{% assign heading_level = include.heading_level | default: 2 %}
+{% assign title_mode = include.title_mode | default: "full" %}
+
+<div class="project-grid">
+  {% for project in projects %}
+    {% if include.ids and selected_ids contains project.id %}
+      {% assign show_project = true %}
+    {% elsif include.ids %}
+      {% assign show_project = false %}
+    {% else %}
+      {% assign show_project = true %}
+    {% endif %}
+
+    {% unless show_project %}
+      {% continue %}
+    {% endunless %}
+
+    {% assign card_title = project.title %}
+    {% if title_mode == "short" and project.short_title %}
+      {% assign card_title = project.short_title %}
+    {% endif %}
+
+    <a class="project-card" href="{{ project.url | relative_url }}">
+      <img src="{{ project.image | relative_url }}" alt="{{ project.alt | escape }}">
+      <div class="project-card__body">
+        <h{{ heading_level }}>{{ card_title }}</h{{ heading_level }}>
+        <p>{{ project.excerpt }}</p>
+        <span>{{ project.technologies }}</span>
+      </div>
+    </a>
+  {% endfor %}
+</div>
