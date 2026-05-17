@@ -1,9 +1,9 @@
 main:
-  - title: "Projects"
+  - title: "/projects"
     url: /projects/
-  - title: "CV"
+  - title: "/cv"
     url: /cv/
-  - title: "GitHub"
+  - title: "/github"
     url: https://github.com/leonce-m
-  - title: "LinkedIn"
+  - title: "/linkedin"
     url: "https://www.linkedin.com/in/leonce-mollerus"

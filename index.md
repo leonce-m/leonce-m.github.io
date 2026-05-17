@@ -1,6 +1,6 @@
 ---
 layout: splash
-title: "Leonce Mollerus"
+title: "/home"
 permalink: /
 excerpt: "Robotics and autonomous systems student working on graph-based SLAM, ROS 2, embedded systems, and Formula Student autonomous racing."
 ---
