@@ -178,3 +178,11 @@
   font-weight: 700;
   background: #e5e7eb;
 }
+
+.initial-content:has(.cv-viewer) {
+  background: #e5e7eb;
+}
+
+.initial-content:has(.cv-viewer) + .page__footer {
+  margin-top: 0;
+}

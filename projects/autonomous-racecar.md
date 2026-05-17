@@ -7,7 +7,6 @@ toc_label: "Contents"
 header:
   overlay_image: /assets/images/fs-italy-2025/fs-italy-2025-car-front.jpg
   overlay_filter: "0.35"
-  caption: "Formula Student Italy 2025"
 ---
 
 Software and systems work for a Formula Student Driverless racecar, spanning ROS 2 integration, localization, mapping, perception interfaces, and embedded deployment.
